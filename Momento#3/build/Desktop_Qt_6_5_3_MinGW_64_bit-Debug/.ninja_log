@@ -1,0 +1,32 @@
+# ninja log v6
+55	432	7530869225035948	Intento_Juego_autogen/timestamp	ad46f30a8c777558
+55	432	7530869225035948	Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+55	432	7530869225035948	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/timestamp	ad46f30a8c777558
+55	432	7530869225035948	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+433	5771	7530869228809855	CMakeFiles/Intento_Juego.dir/main.cpp.obj	954ea3d77b371841
+1241	9081	7527772047770916	CMakeFiles/Intento_Juego.dir/Intento_Juego_autogen/mocs_compilation.cpp.obj	3f3ad087e8e98e5e
+442	5189	7530869228900847	CMakeFiles/Intento_Juego.dir/mainwindow.cpp.obj	ea1e0062ea2fabc
+5771	6165	7530869282187151	Intento_Juego.exe	3715c16554dc54f0
+447	5499	7530869228950751	CMakeFiles/Intento_Juego.dir/Particle.cpp.obj	c57e1e92bf0dc973
+451	5418	7530869229000621	CMakeFiles/Intento_Juego.dir/Aves.cpp.obj	fb11090f0192af85
+63	352	7530870638664286	Intento_Juego_autogen/timestamp	ad46f30a8c777558
+63	352	7530870638664286	Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+63	352	7530870638664286	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/timestamp	ad46f30a8c777558
+63	352	7530870638664286	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+353	3348	7530870641563034	CMakeFiles/Intento_Juego.dir/mainwindow.cpp.obj	ea1e0062ea2fabc
+358	3537	7530870641612898	CMakeFiles/Intento_Juego.dir/Particle.cpp.obj	c57e1e92bf0dc973
+3537	3930	7530870673395374	Intento_Juego.exe	3715c16554dc54f0
+46	371	7530871778507861	Intento_Juego_autogen/timestamp	ad46f30a8c777558
+46	371	7530871778507861	Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+46	371	7530871778507861	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/timestamp	ad46f30a8c777558
+46	371	7530871778507861	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+373	4447	7530871781768330	CMakeFiles/Intento_Juego.dir/mainwindow.cpp.obj	ea1e0062ea2fabc
+378	4699	7530871781818194	CMakeFiles/Intento_Juego.dir/Particle.cpp.obj	c57e1e92bf0dc973
+4699	5097	7530871825036446	Intento_Juego.exe	3715c16554dc54f0
+56	280	7530872494926067	Intento_Juego_autogen/timestamp	ad46f30a8c777558
+56	280	7530872494926067	Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+56	280	7530872494926067	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/timestamp	ad46f30a8c777558
+56	280	7530872494926067	C:/Users/Miller Perez/Documents/Intento_Juego/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Intento_Juego_autogen/mocs_compilation.cpp	ad46f30a8c777558
+281	3129	7530872497165785	CMakeFiles/Intento_Juego.dir/mainwindow.cpp.obj	ea1e0062ea2fabc
+285	3257	7530872497205690	CMakeFiles/Intento_Juego.dir/Particle.cpp.obj	c57e1e92bf0dc973
+3257	3722	7530872526934001	Intento_Juego.exe	3715c16554dc54f0
