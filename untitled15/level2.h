@@ -9,6 +9,12 @@ class Level2 : public QWidget {
 
 public:
     explicit Level2(QWidget *parent = nullptr);
+private slots:
+    void backToMenu();  // Para volver al menú principal
+
+private:
+    QPushButton *buttonBack;  // Botón para regresar al menú
 };
 
-#endif // LEVEL2_H
+
+#endif// LEVEL2_H

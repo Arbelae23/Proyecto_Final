@@ -67,12 +67,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 void MainWindow::openLevel1() {
     Level1 *level1 = new Level1(this);
     level1->show();
-    this->hide();  // Ocultar menú principal
+    //this->hide();  // Ocultar menú principal
 }
 
 void MainWindow::openLevel2() {
     Level2 *level2 = new Level2(this);
     level2->show();
-    this->hide();  // Ocultar menú principal
+    //this->hide();  // Ocultar menú principal
 }
-

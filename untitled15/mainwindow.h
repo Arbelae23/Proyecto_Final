@@ -17,4 +17,5 @@ private slots:
     void openLevel2();  // Slot para abrir Nivel 2
 };
 
+
 #endif // MAINWINDOW_H
