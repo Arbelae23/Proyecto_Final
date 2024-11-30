@@ -75,3 +75,4 @@ void MainWindow::openLevel2() {
     level2->show();
     this->hide();  // Ocultar menú principal
 }
+

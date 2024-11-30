@@ -13,13 +13,15 @@ SOURCES += \
     level1.cpp \
     level2.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    particle.cpp
 
 HEADERS += \
     aves.h \
     level1.h \
     level2.h \
-    mainwindow.h
+    mainwindow.h \
+    particle.h
 
 FORMS += \
     mainwindow.ui
