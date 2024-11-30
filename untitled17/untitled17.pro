@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     aves.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    particle.cpp
 
 HEADERS += \
     aves.h \
-    mainwindow.h
+    mainwindow.h \
+    particle.h
 
 FORMS += \
     mainwindow.ui
