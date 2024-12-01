@@ -23,27 +23,27 @@ int main(int argc, char *argv[])
     view.setScene(&scene);
 
     // Agregar la imagen de fondo
-    QPixmap backgroundPixmap("C:/Users/Miller Perez/Documents/P_Final/Sprites/Background.jpg");
+    QPixmap backgroundPixmap(":/images/fondonivel2.jpg");
     QGraphicsPixmapItem* backgroundItem = new QGraphicsPixmapItem(backgroundPixmap);
     backgroundItem->setPos(0, 0);
     scene.addItem(backgroundItem);
 
     // Cargar la imagen del cronómetro
-    QPixmap cronometroPixmap("C:/Users/Miller Perez/Documents/P_Final/Sprites/cronometro.png");
+    QPixmap cronometroPixmap(":/images/cronometro.jpg");
     QPixmap scaledCronometroPixmap = cronometroPixmap.scaled(80, 80, Qt::KeepAspectRatio);
     QGraphicsPixmapItem* cronometroItem = new QGraphicsPixmapItem(scaledCronometroPixmap);
     cronometroItem->setPos(1091, 10);
     scene.addItem(cronometroItem);
 
     // Cargar la imagen del fondo de aciertos
-    QPixmap fondoPixmap("C:/Users/Miller Perez/Documents/P_Final/Sprites/fondo_aciertos.png");
+    QPixmap fondoPixmap(":/images/fondo_aciertos.png");
     QPixmap scaledFondoPixmap = fondoPixmap.scaled(250, 100, Qt::IgnoreAspectRatio);
     QGraphicsPixmapItem* fondoItem = new QGraphicsPixmapItem(scaledFondoPixmap);
     fondoItem->setPos(1030, 605);
     scene.addItem(fondoItem);
 
     // Cargar la imagen del ave muerta
-    QPixmap aveMuertaPixmap("C:/Users/Miller Perez/Documents/P_Final/Sprites/ave_muerta.png");
+    QPixmap aveMuertaPixmap(":/images/ave_muerta.png");
     QPixmap scaledAveMuertaPixmap = aveMuertaPixmap.scaled(100, 100, Qt::KeepAspectRatio);
     QGraphicsPixmapItem* aveMuertaItem = new QGraphicsPixmapItem(scaledAveMuertaPixmap);
     aveMuertaItem->setPos(1030,600);
@@ -56,11 +56,11 @@ int main(int argc, char *argv[])
     scene.addItem(particle);
 
     // Crear una ave y agregarla a la escena
-    Aves* ave = new Aves(200, 200, "C:/Users/Miller Perez/Documents/P_Final/Sprites/Ave.png", 1);
+    Aves* ave = new Aves(200, 200, ":/images/Ave.png", 1);
     scene.addItem(ave);
 
     // Crear la segunda ave y agregarla a la escena
-    Aves* ave2 = new Aves(200, 200, "C:/Users/Miller Perez/Documents/P_Final/Sprites/Ave.png", 2);
+    Aves* ave2 = new Aves(200, 200, ":/images/Ave.png", 2);
     scene.addItem(ave2);
     // Configurar el temporizador para actualizar la posición de la partícula
     QTimer* timer = new QTimer();
@@ -95,13 +95,13 @@ int main(int argc, char *argv[])
 
 
     // Cargar y agregar una imagen de "Game Over"
-    QPixmap gameOverPixmap("C:/Users/Miller Perez/Documents/P_Final/Sprites/game_over.png");
+    QPixmap gameOverPixmap(":/images/game_over.png");
     QGraphicsPixmapItem* gameOverItem = scene.addPixmap(gameOverPixmap);
     gameOverItem->setPos(250, 120); // Posición de la imagen
     gameOverItem->hide(); // Ocultar la imagen al inicio
 
     // Cargar y agregar la imagen de "you win"
-    QPixmap youWinPixmap("C:/Users/Miller Perez/Documents/P_Final/Sprites/you_win.png");
+    QPixmap youWinPixmap(":/images/you_win.png");
     youWinPixmap = youWinPixmap.scaled(QSize(900, 900), Qt::KeepAspectRatio);
     QGraphicsPixmapItem* youWinItem = scene.addPixmap(youWinPixmap);
     youWinItem->hide(); // Ocultar la imagen al inicio

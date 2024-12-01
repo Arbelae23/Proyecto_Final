@@ -17,7 +17,7 @@ Particle::Particle(qreal initialX, qreal initialY) :
     setFlag(ItemIsFocusable); // permitir el enfoque para recibir eventos de teclado
 
     // Cargar la imagen de la partícula
-    m_pixmap.load("C:/Users/Miller Perez/Documents/P_Final/Sprites/Mira.png"); // ruta de la imagen de la partícula
+    m_pixmap.load(":/images/mira.png"); // ruta de la imagen de la partícula
     m_pixmap = m_pixmap.scaled(80, 80, Qt::KeepAspectRatio); // Escala la imagen manteniendo la relación de aspecto
 }
 
@@ -100,7 +100,7 @@ void Particle::keyPressEvent(QKeyEvent* event)
         keySPressed = true;
         break;
     case Qt::Key_Space: // Tecla espacio presionada
-        m_explosionPixmap.load("C:/Users/Miller Perez/Documents/P_Final/Sprites/Explosion.png"); // Cargar imagen de explosión
+        m_explosionPixmap.load(":/images/explosion.png"); // Cargar imagen de explosión
         m_explosionPixmap = m_explosionPixmap.scaled(100, 100, Qt::KeepAspectRatio); // Escalar imagen de explosión
         m_showExplosion = true;
 

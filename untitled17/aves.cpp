@@ -8,8 +8,8 @@ Aves::Aves(qreal initialX, qreal initialY, const QString &imagePath, int movemen
     m_initialVelocityY(110.0), // Define la velocidad inicial hacia arriba
     m_bounceHeight(680) // Define la altura máxima
 {
-    m_imageRight.load("C:/Users/Miller Perez/Documents/P_Final/Sprites/Ave_derecha.png");
-    m_imageLeft.load("C:/Users/Miller Perez/Documents/P_Final/Sprites/Ave_izquierda.png");
+    m_imageRight.load(":/images/ave_derecha.png");
+    m_imageLeft.load(":/images/Ave_izquierda.png");
     //m_pixmap.load(imagePath); // Cargar la imagen del ave
     //m_pixmap = m_pixmap.scaled(60, 60, Qt::KeepAspectRatio); // Escalar la imagen
     m_imageRight = m_imageRight.scaled(60, 60, Qt::KeepAspectRatio);
