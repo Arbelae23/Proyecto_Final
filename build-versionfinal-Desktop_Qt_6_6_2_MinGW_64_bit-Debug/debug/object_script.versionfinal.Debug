@@ -1,0 +1,14 @@
+debug/avescirculares.o
+debug/avessencillas.o
+debug/explosion.o
+debug/level1.o
+debug/level2.o
+debug/main.o
+debug/mainmenu.o
+debug/mainwindow.o
+debug/particle.o
+debug/qrc_images.o
+debug/moc_level1.o
+debug/moc_level2.o
+debug/moc_mainmenu.o
+debug/moc_mainwindow.o
