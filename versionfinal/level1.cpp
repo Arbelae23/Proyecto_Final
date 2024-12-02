@@ -4,7 +4,7 @@ Level1::Level1(QWidget *parent) : QGraphicsView(parent), aciertos(0), contador(9
 {
     scene = new QGraphicsScene(this);
     setScene(scene);
-    setFixedSize(115, 720); // Ajustar el tamaño de la vista
+    setFixedSize(1366, 725); // Ajustar el tamaño de la vista
 
     // Agregar la imagen de fondo
     QPixmap backgroundPixmap(":images/fondonivel2.jpg");

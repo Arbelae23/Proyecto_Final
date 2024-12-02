@@ -4,17 +4,21 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsTextItem>
 
 class MainMenu : public QWidget
 {
     Q_OBJECT
 
 public:
-    MainMenu(QWidget *parent = nullptr);
+    explicit MainMenu(QWidget *parent = nullptr);
 
 signals:
-    void startLevel1();
-    void exitGame();
+    void startLevel1(); // Señal para iniciar el nivel 1
+    void exitGame();    // Señal para salir del juego
 };
 
 #endif // MAINMENU_H
