@@ -2066,7 +2066,11 @@ release/mainmenu.o: ../versionfinal/mainmenu.cpp ../versionfinal/MainMenu.h \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/qpainterpath.h \
-		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsTextItem
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsTextItem \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qtextdocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainmenu.o ..\versionfinal\mainmenu.cpp
 
 release/mainwindow.o: ../versionfinal/mainwindow.cpp ../versionfinal/MainWindow.h \
