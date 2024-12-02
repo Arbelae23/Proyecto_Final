@@ -9,7 +9,7 @@ MainMenu::MainMenu(QWidget *parent) : QWidget(parent)
     QVBoxLayout *layout = new QVBoxLayout(this);
 
     // Crear botones
-    QPushButton *startButton = new QPushButton("Iniciar Nivel 1");
+    QPushButton *startButton = new QPushButton("Nivel 1");
     QPushButton *exitButton = new QPushButton("Salir");
 
     // Ajustar tamaño de los botones
@@ -24,7 +24,7 @@ MainMenu::MainMenu(QWidget *parent) : QWidget(parent)
                           "font-family: 'Comic Sans MS';"
                           "border: none;"      // Sin bordes
                           "color: yellow;"     // Texto amarillo
-                          "font-size: 20px;"   // Tamaño de fuente
+                          "font-size: 40px;"   // Tamaño de fuente
                           "padding: 10px;"     // Relleno interno
                           "}";
 
@@ -37,8 +37,9 @@ MainMenu::MainMenu(QWidget *parent) : QWidget(parent)
     hLayout->addWidget(exitButton);
     hLayout->setSpacing(1);  // Espaciado horizontal entre los botones
 
+
     // Layout principal vertical para centrar los botones
-    layout->addStretch();
+    layout->addSpacing(500);
     layout->addLayout(hLayout);
     layout->addStretch();
 
