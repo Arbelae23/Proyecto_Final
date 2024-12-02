@@ -16,5 +16,11 @@
         <file>images/pelota.png</file>
         <file>images/sprites bart.png</file>
         <file>images/you_win.png</file>
+        <file>../Nivel2/P_Final/Sprites/Ave_derecha_1.png</file>
+        <file>../Nivel2/P_Final/Sprites/Ave_derecha_2.png</file>
+        <file>../Nivel2/P_Final/Sprites/Ave_derecha_3.png</file>
+        <file>../Nivel2/P_Final/Sprites/Ave_izquierda_1.png</file>
+        <file>../Nivel2/P_Final/Sprites/Ave_izquierda_2.png</file>
+        <file>../Nivel2/P_Final/Sprites/Ave_izquierda_3.png</file>
     </qresource>
 </RCC>

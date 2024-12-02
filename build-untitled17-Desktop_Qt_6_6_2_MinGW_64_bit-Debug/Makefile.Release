@@ -127,7 +127,13 @@ release/qrc_images.cpp: ../untitled17/images.qrc \
 		../untitled17/images/mira.png \
 		../untitled17/images/pelota.png \
 		../untitled17/images/Ave_izquierda.png \
-		../untitled17/images/ave_derecha.png
+		../untitled17/images/ave_derecha.png \
+		../Nivel2/P_Final/Sprites/Ave_izquierda_1.png \
+		../Nivel2/P_Final/Sprites/Ave_izquierda_2.png \
+		../Nivel2/P_Final/Sprites/Ave_izquierda_3.png \
+		../Nivel2/P_Final/Sprites/Ave_derecha_2.png \
+		../Nivel2/P_Final/Sprites/Ave_derecha_3.png \
+		../Nivel2/P_Final/Sprites/Ave_derecha_1.png
 	C:\Qt\6.6.2\mingw_64\bin\rcc.exe -name images --no-zstd ..\untitled17\images.qrc -o release\qrc_images.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h

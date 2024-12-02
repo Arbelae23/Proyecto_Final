@@ -3,7 +3,7 @@
 AvesSencillas::AvesSencillas(qreal startX, qreal startY)
     : QGraphicsPixmapItem(), dx(2)
 {
-    setPixmap(QPixmap(":/images/Ave.png").scaled(80, 80, Qt::KeepAspectRatio));
+    setPixmap(QPixmap(":/images/Ave_izquierda.png").scaled(80, 80, Qt::KeepAspectRatio));
     setPos(startX, startY);
 }
 

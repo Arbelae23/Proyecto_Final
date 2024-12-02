@@ -3,9 +3,13 @@
 
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsTextItem>
 #include <QTimer>
+#include <QDebug>
+
 #include "Particle.h"
-#include "AvesSencillas.h"
+#include "Aves.h"
 
 class Level1 : public QGraphicsView
 {
@@ -15,18 +19,28 @@ public:
     Level1(QWidget *parent = nullptr);
 
 signals:
-    void levelCompleted();
+    void levelCompleted(); // Nivel completado
+    void levelFailed();    // Nivel fallido
+
+private slots:
+    void updateScene();    // Actualiza la escena
+    void updateTime();     // Actualiza el tiempo restante
 
 private:
     QGraphicsScene *scene;
     Particle *particle;
-    QList<AvesSencillas *> aves;
+    QGraphicsTextItem *textItemTiempo;
+    QGraphicsTextItem *textItemAciertos;
+    QTimer *movementTimer;
+    QTimer *contadorTimer;
     QTimer *timer;
-    int aciertos;
 
-private slots:
-    void updateScene();
-    void checkCompletion();
+    int aciertos;
+    int contador;
+
+    void checkCompletion();    // Verifica si se ha completado el nivel
+    void showGameOver();       // Muestra la pantalla de Game Over
+    void incrementarAciertos(); // Incrementa los aciertos
 };
 
 #endif // LEVEL1_H

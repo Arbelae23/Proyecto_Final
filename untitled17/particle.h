@@ -3,7 +3,7 @@
 
 #include <QPixmap>
 #include <QGraphicsItem>
-#include <QRectF> // Rectángulo que limita
+#include <QRectF> // Rectangulo que limita
 #include <QPainter> // Pintar o renderizar formas
 #include <QKeyEvent>
 
@@ -22,9 +22,9 @@ public:
     void moveRight();
     void moveUp();
     void moveDown();
-    void checkCollision(Aves* ave); // Método para verificar colisión
+    void checkCollision(Aves* ave); // Método para verificar colision
 
-    // Cambiar updatePosition a público
+    // Cambiar updatePosition a publico
     void updatePosition(); // Método para actualizar la posición
 
 protected:
@@ -32,7 +32,7 @@ protected:
     void keyReleaseEvent(QKeyEvent* event) override; // Evento de tecla liberada
 
 private:
-    // Atributos privados sobre velocidad, límites y color.
+    // Atributos privados sobre velocidad, limites y color.
     qreal velocity;
     qreal minX;
     qreal maxX;
@@ -52,7 +52,7 @@ private:
     bool m_showExplosion; // Bandera para mostrar la explosión
     QPixmap m_explosionPixmap; // Imagen de la explosión
 
-    int spaceKeyPressCount = 0; // Contador de veces que se oprime la tecla "Espacio" en la misma posición del ave
+    int spaceKeyPressCount = 0; // Contador de veces que se oprime la tecla "Espacio" en la misma posición
     bool isParticleOverAve = false; // Variable para verificar si la partícula y el ave están en la misma posición
 };
 

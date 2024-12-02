@@ -9,9 +9,8 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    aves.cpp \
     avescirculares.cpp \
-    avessencillas.cpp \
-    explosion.cpp \
     level1.cpp \
     level2.cpp \
     main.cpp \
@@ -20,9 +19,8 @@ SOURCES += \
     particle.cpp
 
 HEADERS += \
+    aves.h \
     avescirculares.h \
-    avessencillas.h \
-    explosion.h \
     level1.h \
     level2.h \
     mainmenu.h \
@@ -38,4 +36,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    images.qrc
+    imagenes.qrc
