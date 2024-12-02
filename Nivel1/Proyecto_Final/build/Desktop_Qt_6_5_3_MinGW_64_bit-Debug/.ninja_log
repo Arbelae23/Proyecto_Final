@@ -1,0 +1,14 @@
+# ninja log v6
+47	1506	7547135323039525	Proyecto_Final_autogen/timestamp	34b0a7f64a18f324
+3355	23727	7546387046090139	CMakeFiles/Proyecto_Final.dir/particle.cpp.obj	668b922037eedcf8
+47	1506	7547135323039525	Proyecto_Final_autogen/mocs_compilation.cpp	34b0a7f64a18f324
+47	1506	7547135323039525	C:/Users/Miller Perez/Documents/Proyecto_Final/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Proyecto_Final_autogen/timestamp	34b0a7f64a18f324
+47	1506	7547135323039525	C:/Users/Miller Perez/Documents/Proyecto_Final/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Proyecto_Final_autogen/mocs_compilation.cpp	34b0a7f64a18f324
+2412	3156	7546387036651772	CMakeFiles/Proyecto_Final.dir/nivel1.cpp.obj	b21b3c84f81d97aa
+3157	3355	7546387044105444	CMakeFiles/Proyecto_Final.dir/nivel2.cpp.obj	1bbb804bff030066
+2609	32620	7546908179826684	CMakeFiles/Proyecto_Final.dir/ball.cpp.obj	b23f790201d3014a
+2587	32622	7546908179620886	CMakeFiles/Proyecto_Final.dir/Proyecto_Final_autogen/mocs_compilation.cpp.obj	3c284a7c8b075cd0
+2401	23561	7546387036556305	CMakeFiles/Proyecto_Final.dir/aves.cpp.obj	2de4e42d685e7c0b
+2592	32619	7546908179642329	CMakeFiles/Proyecto_Final.dir/main.cpp.obj	d51135e3601a21d6
+1508	5904	7547135337653451	CMakeFiles/Proyecto_Final.dir/mainwindow.cpp.obj	460a06dd09181c85
+5904	6802	7547135381613600	Proyecto_Final.exe	d94641031c5ca05b
