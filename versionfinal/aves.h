@@ -10,11 +10,11 @@
 class Aves : public QGraphicsItem
 {
 public:
-    Aves(qreal initialX, qreal initialY, int movementType);
-    QRectF boundingRect() const override;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
-      void updatePosition();  // Asegúrate de que esté declarado aquí
-    void advance(int phase) override;  // Este método actualizará la posición automáticamente
+    Aves(qreal initialX, qreal initialY, int movementType);// constructor
+    QRectF boundingRect() const override;//area ocupada por el ave
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;//dibuja el sprite en la escena
+    void updatePosition();  // controla como se mueve el ave
+    void advance(int phase) override;  // Este metodo actualizara la posición automaticamente
 
 private:
     QVector<QPixmap> m_imagesRight;  // Imágenes para el ave moviéndose a la derecha

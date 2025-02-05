@@ -1,0 +1,13 @@
+debug/aves.o
+debug/avescirculares.o
+debug/level1.o
+debug/level2.o
+debug/main.o
+debug/mainmenu.o
+debug/mainwindow.o
+debug/particle.o
+debug/qrc_imagenes.o
+debug/moc_level1.o
+debug/moc_level2.o
+debug/moc_mainmenu.o
+debug/moc_mainwindow.o

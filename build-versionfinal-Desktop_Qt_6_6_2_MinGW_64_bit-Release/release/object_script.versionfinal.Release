@@ -1,0 +1,13 @@
+release/aves.o
+release/avescirculares.o
+release/level1.o
+release/level2.o
+release/main.o
+release/mainmenu.o
+release/mainwindow.o
+release/particle.o
+release/qrc_imagenes.o
+release/moc_level1.o
+release/moc_level2.o
+release/moc_mainmenu.o
+release/moc_mainwindow.o
