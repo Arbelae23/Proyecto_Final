@@ -1,13 +1,16 @@
 #include "Level1.h"
+#include <QApplication>
 
 Level1::Level1(QWidget *parent) : QGraphicsView(parent), aciertos(0), contador(90)
 {
     scene = new QGraphicsScene(this);
     setScene(scene);
-    setFixedSize(1366, 725); // Ajustar el tamaño de la vista
+    setFixedSize(1350, 720); // Ajustar el tamaño de la vista
+    setMouseTracking(true);
+    setCursor(Qt::CrossCursor);
 
     // Agregar la imagen de fondo
-    QPixmap backgroundPixmap(":images/fondonivel2.jpg");
+    QPixmap backgroundPixmap(":images/fondonivel1.jpg");
     QGraphicsPixmapItem *backgroundItem = new QGraphicsPixmapItem(backgroundPixmap);
     backgroundItem->setPos(0, 0);
     scene->addItem(backgroundItem);
@@ -35,7 +38,7 @@ Level1::Level1(QWidget *parent) : QGraphicsView(parent), aciertos(0), contador(9
 
     // Texto de tiempo restante
     textItemTiempo = new QGraphicsTextItem(QString::number(contador));
-    textItemTiempo->setDefaultTextColor(Qt::black);
+    textItemTiempo->setDefaultTextColor(Qt::white);
     textItemTiempo->setFont(QFont("Arial", 32));
     textItemTiempo->setPos(1160, 25);
     scene->addItem(textItemTiempo);
@@ -96,7 +99,7 @@ void Level1::updateTime()
     {
         contadorTimer->stop();
         movementTimer->stop();
-        emit levelFailed(); // Emitir señal de nivel fallido si no se logró en el tiempo
+        showGameOverScreen();
     }
 }
 
@@ -104,9 +107,27 @@ void Level1::checkCompletion()
 {
     if (aciertos >= 15)
     {
+
         contadorTimer->stop();
         movementTimer->stop();
-        emit levelCompleted(); // Emitir señal de nivel completado
+        timer->stop();
+
+
+        for (QGraphicsItem* item : scene->items()) {
+            item->setVisible(false);
+        }
+
+
+        QPixmap youWinPixmap(":images/you_win.png");
+        QGraphicsPixmapItem* youWinItem = new QGraphicsPixmapItem(youWinPixmap);
+        youWinItem->setPos((scene->width() - youWinPixmap.width()) / 2,
+                           (scene->height() - youWinPixmap.height()) / 2);
+        scene->addItem(youWinItem);
+
+
+        QTimer::singleShot(2000, this, [this]() {
+            emit levelCompleted(); // Emitir señal para avanzar de nivel
+        });
     }
 }
 
@@ -118,4 +139,71 @@ void Level1::incrementarAciertos()
     {
         checkCompletion();
     }
+}
+void Level1::mouseMoveEvent(QMouseEvent *event)
+{
+    if (particle)
+    {
+        QPointF mousePos = mapToScene(event->pos());
+
+
+        qreal offsetX = particle->boundingRect().width() / 2;
+        qreal offsetY = particle->boundingRect().height() / 2;
+
+
+        particle->setPos(mousePos.x() - offsetX, mousePos.y() - offsetY);
+    }
+}
+void Level1::mousePressEvent(QMouseEvent *event)
+{
+    QPointF mousePos = mapToScene(event->pos());
+    QList<QGraphicsItem *> itemsUnderCursor = scene->items(mousePos);
+    if (particle)
+    {
+        particle->triggerExplosion();
+    }
+
+    for (QGraphicsItem *item : std::as_const(itemsUnderCursor))
+    {
+        Aves *ave = dynamic_cast<Aves *>(item);
+        if (ave)
+        {
+            qreal newX = QRandomGenerator::global()->bounded(100, 900);
+            qreal newY = QRandomGenerator::global()->bounded(100, 500);
+
+            ave->setPos(newX, newY);
+            incrementarAciertos();
+
+
+
+            return;
+        }
+    }
+}
+void Level1::showGameOverScreen()
+{
+
+    contadorTimer->stop();
+    movementTimer->stop();
+    timer->stop();
+
+
+    setEnabled(false);
+
+
+    QPixmap gameOverPixmap(":images/game_over.png");
+    QPixmap scaledGameOverPixmap = gameOverPixmap.scaled(600, 400, Qt::KeepAspectRatio);
+    gameOverItem = new QGraphicsPixmapItem(scaledGameOverPixmap);
+
+
+    gameOverItem->setPos((scene->width() - gameOverItem->boundingRect().width()) / 2,
+                         (scene->height() - gameOverItem->boundingRect().height()) / 2);
+    scene->addItem(gameOverItem);
+
+
+    QTimer::singleShot(3000, this, &Level1::closeGame);
+}
+void Level1::closeGame()
+{
+    QApplication::quit();
 }

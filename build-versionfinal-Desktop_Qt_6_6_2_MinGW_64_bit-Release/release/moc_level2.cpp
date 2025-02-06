@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../Downloads/versionfinalcorregidalevel1/versionfinal/level2.h"
+#include "../../versionfinal/level2.h"
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -39,30 +39,34 @@ namespace {
 struct qt_meta_stringdata_CLASSLevel2ENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSLevel2ENDCLASS = QtMocHelpers::stringData(
     "Level2",
-    "updateScene",
+    "levelCompleted",
     "",
+    "updateScene",
     "updateCountdown"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSLevel2ENDCLASS_t {
-    uint offsetsAndSizes[8];
+    uint offsetsAndSizes[10];
     char stringdata0[7];
-    char stringdata1[12];
+    char stringdata1[15];
     char stringdata2[1];
-    char stringdata3[16];
+    char stringdata3[12];
+    char stringdata4[16];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSLevel2ENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSLevel2ENDCLASS_t qt_meta_stringdata_CLASSLevel2ENDCLASS = {
     {
         QT_MOC_LITERAL(0, 6),  // "Level2"
-        QT_MOC_LITERAL(7, 11),  // "updateScene"
-        QT_MOC_LITERAL(19, 0),  // ""
-        QT_MOC_LITERAL(20, 15)   // "updateCountdown"
+        QT_MOC_LITERAL(7, 14),  // "levelCompleted"
+        QT_MOC_LITERAL(22, 0),  // ""
+        QT_MOC_LITERAL(23, 11),  // "updateScene"
+        QT_MOC_LITERAL(35, 15)   // "updateCountdown"
     },
     "Level2",
-    "updateScene",
+    "levelCompleted",
     "",
+    "updateScene",
     "updateCountdown"
 };
 #undef QT_MOC_LITERAL
@@ -75,16 +79,22 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLevel2ENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   32,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x08,    1 /* Private */,
-       3,    0,   27,    2, 0x08,    2 /* Private */,
+       3,    0,   33,    2, 0x08,    2 /* Private */,
+       4,    0,   34,    2, 0x08,    3 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
@@ -102,6 +112,8 @@ Q_CONSTINIT const QMetaObject Level2::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSLevel2ENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Level2, std::true_type>,
+        // method 'levelCompleted'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'updateScene'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'updateCountdown'
@@ -116,9 +128,19 @@ void Level2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<Level2 *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->updateScene(); break;
-        case 1: _t->updateCountdown(); break;
+        case 0: _t->levelCompleted(); break;
+        case 1: _t->updateScene(); break;
+        case 2: _t->updateCountdown(); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (Level2::*)();
+            if (_t _q_method = &Level2::levelCompleted; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
         }
     }
     (void)_a;
@@ -143,14 +165,20 @@ int Level2::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
+}
+
+// SIGNAL 0
+void Level2::levelCompleted()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP

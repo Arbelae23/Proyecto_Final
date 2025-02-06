@@ -19,18 +19,19 @@ public:
     Level1(QWidget *parent = nullptr);
 
 signals:
-    void levelCompleted(); // Nivel completado
-    void levelFailed();    // Nivel fallido
+    void levelCompleted();//nivel completado
+    void levelFailed();//nivel fallido
 
 private slots:
-    void updateScene();    // Actualiza la escena
-    void updateTime();     // Actualiza el tiempo restante
+    void updateScene();//actualizar la escena
+    void updateTime();//actualizar el tiempo restante
 
 private:
     QGraphicsScene *scene;
     Particle *particle;
     QGraphicsTextItem *textItemTiempo;
     QGraphicsTextItem *textItemAciertos;
+    QGraphicsPixmapItem* gameOverItem;
     QTimer *movementTimer;
     QTimer *contadorTimer;
     QTimer *timer;
@@ -38,9 +39,12 @@ private:
     int aciertos;
     int contador;
 
-    void checkCompletion();    // Verifica si se ha completado el nivel
-    void showGameOver();       // Muestra la pantalla de Game Over
-    void incrementarAciertos(); // Incrementa los aciertos
+    void checkCompletion();//verifica si se ha completado el nivel
+    void showGameOverScreen();
+    void incrementarAciertos();//incrementa los aciertos
+    void closeGame();
+    void mouseMoveEvent(QMouseEvent *event) override;
+protected:
+    void mousePressEvent(QMouseEvent *event) override;
 };
-
 #endif // LEVEL1_H

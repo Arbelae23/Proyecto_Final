@@ -26,6 +26,7 @@ public:
 
     // Cambiar updatePosition a publico
     void updatePosition(); // Método para actualizar la posición
+    void triggerExplosion();
 
 protected:
     void keyPressEvent(QKeyEvent* event) override; // Evento de tecla presionada
@@ -46,14 +47,14 @@ private:
     bool keySPressed;
     bool keyDPressed;
 
-    QPixmap m_pixmap; // Atributo para almacenar la imagen de la partícula
+    QPixmap m_pixmap;//atributo para almacenar la imagen de la particula
 
-    // Nuevos atributos para manejar la explosión
-    bool m_showExplosion; // Bandera para mostrar la explosión
-    QPixmap m_explosionPixmap; // Imagen de la explosión
+   //nuevos atributos para manejar la explosion
+    bool m_showExplosion;//bandera para mostrar la explosion
+    QPixmap m_explosionPixmap;//imagen de la explosion
 
-    int spaceKeyPressCount = 0; // Contador de veces que se oprime la tecla "Espacio" en la misma posición
-    bool isParticleOverAve = false; // Variable para verificar si la partícula y el ave están en la misma posición
+    int spaceKeyPressCount = 0;//contador de veces que se oprime la tecla "Espacio" en la misma posicion
+    bool isParticleOverAve = false;//variable para verificar si la particula y el ave estan en la misma posicion
 };
 
 #endif // PARTICLE_H

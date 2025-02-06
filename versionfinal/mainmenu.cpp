@@ -52,5 +52,6 @@ MainMenu::MainMenu(QWidget *parent) : QWidget(parent)
     // Conectar las señales de los botones
     connect(startButton, &QPushButton::clicked, this, &MainMenu::startLevel1);
     connect(exitButton, &QPushButton::clicked, this, &MainMenu::exitGame);
+
 }
 

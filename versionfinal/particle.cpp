@@ -206,3 +206,17 @@ void Particle::updatePosition() {
 
     scene()->update(); // Actualiza la escena
 }
+void Particle::triggerExplosion()
+{
+    m_explosionPixmap.load(":images/explosion.png");
+    m_explosionPixmap = m_explosionPixmap.scaled(100, 100, Qt::KeepAspectRatio);
+    m_showExplosion = true;
+
+    // Temporizador para ocultar la explosión después de 1 segundo.
+    QTimer::singleShot(250, [this]() {
+        m_showExplosion = false;
+        scene()->update();
+    });
+
+    scene()->update();
+}

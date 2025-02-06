@@ -22,9 +22,9 @@ Aves::Aves(qreal initialX, qreal initialY, int movementType)
 
     // Límites de la pantalla
     minX = 0;
-    maxX = 1000;
+    maxX = 1350;
     minY = 0;
-    maxY = 500;
+    maxY = 710;
 }
 
 QRectF Aves::boundingRect() const
@@ -46,9 +46,9 @@ void Aves::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
 
 void Aves::advance(int phase)
 {
-    if (!phase) return;  // En la fase 0 no hacemos nada
+    if (!phase) return;//en la fase 0 no hacemos nada
 
-    // Cambiar el fotograma de animación
+    //cambiar el fotograma de animacion
     m_animationFrame = (m_animationFrame + 1) % 3;
 
     if (m_velocityX > 0) {
@@ -57,7 +57,7 @@ void Aves::advance(int phase)
         m_isMovingRight = false;
     }
 
-    if (m_movementType == 1)  // Movimiento parabólico
+    if (m_movementType == 1)  //movimiento parabolico
     {
         qreal newX = x() + m_velocityX;
         qreal newY = y() + m_velocityY * m_time - (0.5 * 9.81 * m_time * m_time);

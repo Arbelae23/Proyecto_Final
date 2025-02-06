@@ -17,8 +17,8 @@ public:
     explicit MainMenu(QWidget *parent = nullptr);
 
 signals:
-    void startLevel1(); // Señal para iniciar el nivel 1
-    void exitGame();    // Señal para salir del juego
+    void startLevel1();//señal para iniciar el nivel 1
+    void exitGame();//señal para salir del juego
 };
 
 #endif // MAINMENU_H

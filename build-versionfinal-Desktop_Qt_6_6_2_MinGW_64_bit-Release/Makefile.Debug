@@ -147,6 +147,7 @@ debug/qrc_imagenes.cpp: ../versionfinal/imagenes.qrc \
 		../versionfinal/images/fondo_aciertos.png \
 		../versionfinal/images/Ave_izquierda_3.png \
 		../versionfinal/images/explosion.png \
+		../versionfinal/images/fondonivel1.jpg \
 		../versionfinal/images/ave_muerta.png \
 		../versionfinal/images/game_over.png \
 		../versionfinal/images/mira.png \
@@ -534,19 +535,26 @@ debug/moc_level2.cpp: ../versionfinal/level2.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsScene \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qpainterpath.h \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsTextItem \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QDebug \
 		../versionfinal/Particle.h \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsItem \
-		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		C:/Qt/6.6.2/mingw_64/include/QtGui/qpainterpath.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QRectF \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/QPainter \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/QKeyEvent \
 		../versionfinal/AvesCirculares.h \
-		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		../versionfinal/Aves.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QVector \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qvector.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QRandomGenerator \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qrandom.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.6.2/mingw_64/bin/moc.exe
 	C:\Qt\6.6.2\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Maria.Lucia/Documents/Proyecto_Final/build-versionfinal-Desktop_Qt_6_6_2_MinGW_64_bit-Release/debug/moc_predefs.h -IC:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -IC:/Users/Maria.Lucia/Documents/Proyecto_Final/versionfinal -IC:/Qt/6.6.2/mingw_64/include -IC:/Qt/6.6.2/mingw_64/include/QtWidgets -IC:/Qt/6.6.2/mingw_64/include/QtGui -IC:/Qt/6.6.2/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\versionfinal\level2.h -o debug\moc_level2.cpp
@@ -1131,7 +1139,8 @@ debug/aves.o: ../versionfinal/aves.cpp ../versionfinal/Aves.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\aves.o ..\versionfinal\aves.cpp
 
 debug/avescirculares.o: ../versionfinal/avescirculares.cpp ../versionfinal/AvesCirculares.h \
-		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		../versionfinal/Aves.h \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsItem \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -1266,9 +1275,22 @@ debug/avescirculares.o: ../versionfinal/avescirculares.cpp ../versionfinal/AvesC
 		C:/Qt/6.6.2/mingw_64/include/QtGui/qrgba64.h \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/qimage.h \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/qpixelformat.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qtimer.h \
-		C:/Qt/6.6.2/mingw_64/include/QtCore/qbasictimer.h
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QVector \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qvector.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QRandomGenerator \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qrandom.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qpainter.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qfontmetrics.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\avescirculares.o ..\versionfinal\avescirculares.cpp
 
 debug/level1.o: ../versionfinal/level1.cpp ../versionfinal/Level1.h \
@@ -1461,7 +1483,29 @@ debug/level1.o: ../versionfinal/level1.cpp ../versionfinal/Level1.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QVector \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qvector.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QRandomGenerator \
-		C:/Qt/6.6.2/mingw_64/include/QtCore/qrandom.h
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qrandom.h \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\level1.o ..\versionfinal\level1.cpp
 
 debug/level2.o: ../versionfinal/level2.cpp ../versionfinal/Level2.h \
@@ -1636,19 +1680,48 @@ debug/level2.o: ../versionfinal/level2.cpp ../versionfinal/Level2.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsScene \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qpainterpath.h \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsTextItem \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QDebug \
 		../versionfinal/Particle.h \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsItem \
-		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		C:/Qt/6.6.2/mingw_64/include/QtGui/qpainterpath.h \
 		C:/Qt/6.6.2/mingw_64/include/QtCore/QRectF \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/QPainter \
 		C:/Qt/6.6.2/mingw_64/include/QtGui/QKeyEvent \
 		../versionfinal/AvesCirculares.h \
-		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem
+		../versionfinal/Aves.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QVector \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qvector.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/QRandomGenerator \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qrandom.h \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.6.2/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.6.2/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.6.2/mingw_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\level2.o ..\versionfinal\level2.cpp
 
 debug/main.o: ../versionfinal/main.cpp C:/Qt/6.6.2/mingw_64/include/QtWidgets/QApplication \
